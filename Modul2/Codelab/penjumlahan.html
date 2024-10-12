@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+    <link rel="stylesheet" href="styleCodePenjumlahan.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Penjumlahan</h2>
+        <label for="firstNumber">Angka Pertama</label>
+        <input type="number" id="firstNumber" placeholder="Masukkan Angka Pertama">
+
+        <label for="secondNumber">Angka Kedua</label>
+        <input type="number" id="secondNumber" placeholder="Masukkan Angka Kedua">
+
+        <div class="button-group">
+            <button onclick="sumNumbers()">Jumlah</button>
+            <button onclick="clearForm()">Clear</button>
+        </div>
+
+        <h3>Hasil : <span id="result">0</span></h3>
+    </div>
+
+    <script src="scriptPenjumlahan.js"></script>
+</body>
+</html>
