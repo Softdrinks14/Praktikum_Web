@@ -1,0 +1,22 @@
+thead {
+    background-color: #40ff00;
+}
+
+table {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-image: url(image/akbar.jpeg);
+    background-size: 800px;
+}

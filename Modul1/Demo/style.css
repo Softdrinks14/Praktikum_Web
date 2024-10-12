@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+:root {
+    --primaryTextColor: #000000;
+    --secondaryTextColor: #656d72;
+    --navbarNavTextColor: #ffffff; 
+    --lineColor: #d9d9d9;
+    --navbarBackgroundColor: #b3b3b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Afacad Flux",  sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; */
+}
+
+img{
+    background-size: cover;
+    width: 100%; 
+    opacity: 0.79;
+}
+
+
+.main-container {
+    flex-grow: 1; 
+    width: 100%;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+  color: var(--primaryTextColor);
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+      width: 90%;
+      padding: 1.5rem;
+    }
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: var(--navbarBackgroundColor);
+    border-bottom: 1px solid var(--primaryTextColor);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    opacity: 0.85;
+}
+
+.navBar .navBar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primaryTextColor);
+    font-style: italic;
+}
+
+.navBar .navBar-logo span {
+    color: var(--navbarNavTextColor);
+}
+
+.navBar .navbar-nav a {
+    color: var(--primaryTextColor);
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navBar .navbar-nav a:hover {
+    color: var(--navbarNavTextColor);
+}
+
+.navBar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primaryTextColor);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navBar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+#menu {
+    display: none;
+}
+
+footer {
+    background-color: var(--navbarBackgroundColor);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: auto;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a {
+    color: var(--primaryTextColor);
+    margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+    color: var(--navbarNavTextColor);
+}
+
+footer .links {
+    margin-bottom: 1.4rem;
+}
+
+footer .links a {
+    color: var(--primaryTextColor);
+    padding: 0.7rem 1rem;
+}
+
+footer .credit {
+    font-size: 1rem;
+}
+
+footer .credit a {
+    color: var(--primaryTextColor);
+    font-weight: 700;
+}
+
+footer .credit a:hover{
+    color: var(--navbarNavTextColor);
+}
+
+.text-left-overlay {
+    position: absolute;
+    top: 20%; 
+    left: 5%; 
+    color: var(--navbarNavTextColor); 
+    z-index: 2; 
+}
+
+.text-left-overlay h1 {
+    font-size: 3rem; 
+    margin-bottom: 1rem;
+}
+
+.text-left-overlay p {
+    font-size: 1.5rem; 
+    font-family: "Poppins", sans-serif;
+}
