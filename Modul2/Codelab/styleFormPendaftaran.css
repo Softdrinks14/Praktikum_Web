@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap');
+
+:root{
+    --hitam: #000000;
+    --abu-abu: #f4f4f4;
+    --putih: #ffffff;
+    --orange: #f06800;
+    --biruLaut: #0be0d2;
+    --biruTua: #0c23cc;
+    --biruAgakTuadanMuda: #4d94ff;
+    --biruPudar: #007a99;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--biruAgakTuadanMuda);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: var(--abu-abu);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 100px auto;
+}
+
+label{
+    color: var(--hitam);
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-color: var(--hitam);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: var(--biruPudar);
+    color: var(--putih);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--biruTua);
+}

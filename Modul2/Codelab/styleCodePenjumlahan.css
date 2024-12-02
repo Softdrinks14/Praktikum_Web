@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --hitam: #000000;
+    --abu-abu: #f4f4f4;
+    --putih: #ffffff;
+    --orange: #f06800;
+    --biruLaut: #0be0d2;
+    --biruTua: #0c23cc;
+    --hijau: #3dad15;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--biruLaut);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-image: url(assets/lord.jpg); */
+}
+
+.container{
+    background-color: var(--hijau);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px 25px;
+    background-color: var(--biruLaut);
+    color: var(--hitam);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover{
+    background-color: var(--putih);
+}
+
+h3{
+    margin-top: 20px;
+    font-size: 18px;
+}
